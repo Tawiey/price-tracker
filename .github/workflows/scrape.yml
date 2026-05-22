@@ -1,0 +1,44 @@
+name: Monthly Price Scrape
+
+on:
+  schedule:
+    # First of every month at 08:00 UTC (10:00 SAST)
+    - cron: '0 8 1 * *'
+  workflow_dispatch:  # Manual trigger via GitHub Actions UI
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run scraper
+        run: python main.py scrape
+
+      - name: Commit updated price database
+        run: |
+          git config user.name  "Price Tracker Bot"
+          git config user.email "action@github.com"
+          git add data/prices.db
+          if git diff --staged --quiet; then
+            echo "No new data to commit."
+          else
+            git commit -m "chore: price update $(date +'%Y-%m')"
+            git push
+          fi
