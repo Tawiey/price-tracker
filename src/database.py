@@ -1,14 +1,27 @@
-import sqlite3
 import os
+import shutil
+import sqlite3
 from contextlib import contextmanager
 
-DATABASE_PATH = "data/prices.db"
+# Absolute paths so this works regardless of working directory or deployment platform
+_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+_BUNDLED_DB = os.path.join(_ROOT, "data", "prices.db")
+_TMP_DB = "/tmp/prices.db"
+
+
+def _db_path() -> str:
+    """On Vercel the repo is read-only; copy the bundled DB to /tmp on first use."""
+    if os.environ.get("VERCEL"):
+        if not os.path.exists(_TMP_DB) and os.path.exists(_BUNDLED_DB):
+            shutil.copy(_BUNDLED_DB, _TMP_DB)
+        return _TMP_DB
+    os.makedirs(os.path.dirname(_BUNDLED_DB), exist_ok=True)
+    return _BUNDLED_DB
 
 
 @contextmanager
 def _get_conn():
-    os.makedirs(os.path.dirname(DATABASE_PATH), exist_ok=True)
-    conn = sqlite3.connect(DATABASE_PATH)
+    conn = sqlite3.connect(_db_path())
     conn.row_factory = sqlite3.Row
     try:
         yield conn
