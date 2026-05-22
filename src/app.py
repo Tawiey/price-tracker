@@ -1,4 +1,5 @@
 import logging
+import os
 from urllib.parse import unquote
 
 from flask import Flask, jsonify, redirect, render_template, request, url_for
@@ -26,6 +27,7 @@ def index():
         products=products,
         last_updated=last_updated or "Never",
         scrape_count=scrape_count,
+        is_vercel=bool(os.environ.get("VERCEL")),
     )
 
 
