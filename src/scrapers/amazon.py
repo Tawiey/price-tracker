@@ -6,6 +6,8 @@ runs but may intermittently fail with a CAPTCHA response. If that happens,
 the scraper logs a warning and returns an empty list — Takealot data is
 unaffected.
 """
+from __future__ import annotations
+
 import logging
 import random
 import time
@@ -65,7 +67,7 @@ def scrape(query: str, max_price: float = 850) -> list[dict]:
 
 
 def _parse_results(html: str, query: str, max_price: float) -> list[dict]:
-    soup = BeautifulSoup(html, "lxml")
+    soup = BeautifulSoup(html, "html.parser")
     results = []
     for card in soup.select('[data-component-type="s-search-result"]'):
         try:
