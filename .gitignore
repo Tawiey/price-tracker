@@ -1,8 +1,16 @@
+# Next.js
+.next/
+node_modules/
+out/
+
+# Python
 __pycache__/
 *.pyc
-*.pyo
 .env
-*.db-journal
-*.db-shm
-*.db-wal
+
+# SQLite (replaced by prices.json)
+data/prices.db
+data/*.db-journal
+data/*.db-shm
+data/*.db-wal
 .DS_Store

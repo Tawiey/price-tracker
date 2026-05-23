@@ -1,0 +1,30 @@
+{
+  "last_updated": "2026-05-23",
+  "scrape_count": 4,
+  "products": [
+    {
+      "store": "Takealot",
+      "title": "Samsung 65\" Neo QLED 4K Smart TV QN65QN90C",
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/samsung/PLID123",
+      "history": [
+        { "date": "2026-02-21", "price": 13833 },
+        { "date": "2026-03-23", "price": 14171 },
+        { "date": "2026-04-22", "price": 14963 },
+        { "date": "2026-05-22", "price": 14654 }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "LG 65\" OLED evo C3 4K Smart TV OLED65C3",
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/lg/PLID456",
+      "history": [
+        { "date": "2026-02-21", "price": 13909 },
+        { "date": "2026-03-23", "price": 14287 },
+        { "date": "2026-04-22", "price": 14989 },
+        { "date": "2026-05-22", "price": 14200 }
+      ]
+    }
+  ]
+}
