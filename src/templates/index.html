@@ -98,7 +98,7 @@
             <th class="text-right px-6 py-3 font-medium">Price</th>
             <th class="text-right px-6 py-3 font-medium">Lowest ever</th>
             <th class="text-center px-6 py-3 font-medium">vs Low</th>
-            <th class="text-center px-6 py-3 font-medium">Link</th>
+            <th class="text-center px-6 py-3 font-medium">History</th>
           </tr>
         </thead>
         <tbody>
@@ -108,9 +108,9 @@
           {% else %}
             {% set above_pct = 0 %}
           {% endif %}
-          {% set sym = 'R' if p.currency == 'ZAR' else '$' %}
-          <tr class="border-b border-slate-800/60 hover:bg-slate-800/50 transition-colors cursor-pointer"
-              onclick="openHistory('{{ p.store | e }}', {{ p.title | tojson }})">
+          {% set sym = 'R' %}
+          <tr class="border-b border-slate-800/60 hover:bg-slate-800/50 transition-colors {% if p.url %}cursor-pointer{% endif %}"
+              {% if p.url %}onclick="window.open('{{ p.url | e }}', '_blank')"{% endif %}>
             <td class="px-6 py-4 whitespace-nowrap">
               {% if p.store == 'Takealot' %}
               <span class="bg-red-950 text-red-300 border border-red-800 text-xs font-medium px-2 py-0.5 rounded">
@@ -153,12 +153,11 @@
               {% endif %}
             </td>
             <td class="px-6 py-4 text-center" onclick="event.stopPropagation()">
-              {% if p.url %}
-              <a href="{{ p.url }}" target="_blank" rel="noopener"
-                 class="text-blue-400 hover:text-blue-300 underline text-xs">View &rarr;</a>
-              {% else %}
-              <span class="text-slate-600 text-xs">—</span>
-              {% endif %}
+              <button onclick="openHistory('{{ p.store | e }}', {{ p.title | tojson }})"
+                      class="text-slate-400 hover:text-blue-400 text-xs px-2 py-1 border border-slate-700
+                             hover:border-blue-600 rounded transition-colors">
+                Chart
+              </button>
             </td>
           </tr>
           {% endfor %}
@@ -168,8 +167,7 @@
   </div>
 
   <p class="text-slate-600 text-xs mt-4 text-center">
-    Amazon prices are in USD. Takealot prices are in ZAR.
-    The current exchange rate is roughly R18–20 per US dollar.
+    Click any row to view the product on Takealot or Amazon South Africa. All prices in ZAR.
   </p>
 
   {% else %}

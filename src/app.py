@@ -35,7 +35,6 @@ def index():
 def scrape():
     from config import (
         AMAZON_SEARCHES,
-        MAX_PRICE_USD,
         MAX_PRICE_ZAR,
         TAKEALOT_SEARCHES,
     )
@@ -48,7 +47,7 @@ def scrape():
         all_products.extend(found)
 
     for query in AMAZON_SEARCHES:
-        found = amazon.scrape(query, max_price=MAX_PRICE_USD)
+        found = amazon.scrape(query, max_price=MAX_PRICE_ZAR)
         logger.info("Amazon %r → %d products", query, len(found))
         all_products.extend(found)
 

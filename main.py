@@ -21,7 +21,7 @@ logger = logging.getLogger(__name__)
 def run_scraper() -> int:
     from config import (
         AMAZON_SEARCHES,
-        MAX_PRICE_USD,
+
         MAX_PRICE_ZAR,
         TAKEALOT_SEARCHES,
     )
@@ -39,7 +39,7 @@ def run_scraper() -> int:
 
     logger.info("Scraping Amazon…")
     for query in AMAZON_SEARCHES:
-        found = amazon.scrape(query, max_price=MAX_PRICE_USD)
+        found = amazon.scrape(query, max_price=MAX_PRICE_ZAR)
         logger.info("  %r → %d products", query, len(found))
         all_products.extend(found)
 

@@ -1,5 +1,5 @@
 """
-Amazon.com scraper (prices in USD).
+Amazon South Africa (amazon.co.za) scraper — prices in ZAR.
 
 Note: Amazon has aggressive bot-detection. This works for occasional/monthly
 runs but may intermittently fail with a CAPTCHA response. If that happens,
@@ -18,7 +18,8 @@ from bs4 import BeautifulSoup
 
 logger = logging.getLogger(__name__)
 
-_SEARCH_URL = "https://www.amazon.com/s"
+_BASE_URL = "https://www.amazon.co.za"
+_SEARCH_URL = "https://www.amazon.co.za/s"
 
 _HEADERS = {
     "User-Agent": (
@@ -30,7 +31,7 @@ _HEADERS = {
         "text/html,application/xhtml+xml,application/xml;"
         "q=0.9,image/avif,image/webp,*/*;q=0.8"
     ),
-    "Accept-Language": "en-US,en;q=0.5",
+    "Accept-Language": "en-ZA,en;q=0.9",
     "Accept-Encoding": "gzip, deflate, br",
     "Connection": "keep-alive",
     "Upgrade-Insecure-Requests": "1",
@@ -38,31 +39,27 @@ _HEADERS = {
 }
 
 
-def scrape(query: str, max_price: float = 850) -> list[dict]:
+def scrape(query: str, max_price: float = 15000) -> list[dict]:
     params = {
         "k": query,
         "i": "electronics",
-        "rh": "n:172659",  # TVs & Video category
     }
     try:
         session = requests.Session()
-        # Warm up session with a visit to the homepage first
-        session.get("https://www.amazon.com", headers=_HEADERS, timeout=12)
+        session.get(_BASE_URL, headers=_HEADERS, timeout=12)
         time.sleep(random.uniform(1.5, 3.0))
 
         resp = session.get(_SEARCH_URL, params=params, headers=_HEADERS, timeout=15)
         if resp.status_code != 200:
-            logger.warning("Amazon returned HTTP %s", resp.status_code)
+            logger.warning("Amazon.co.za returned HTTP %s", resp.status_code)
             return []
         if "captcha" in resp.text.lower() or "robot" in resp.text.lower():
-            logger.warning(
-                "Amazon showed a bot-detection page — skipping Amazon results this run"
-            )
+            logger.warning("Amazon.co.za showed a bot-detection page — skipping this run")
             return []
 
         return _parse_results(resp.text, query, max_price)
     except Exception as exc:
-        logger.error("Amazon scrape error for %r: %s", query, exc)
+        logger.error("Amazon.co.za scrape error for %r: %s", query, exc)
         return []
 
 
@@ -88,13 +85,13 @@ def _parse_card(card, query: str) -> dict | None:
     if not title or not _is_relevant(title):
         return None
 
-    # Price: whole + fraction, e.g. "1,299." + "00"
+    # Amazon ZAR prices: whole part may contain "12,999" with no fraction
     whole_el = card.select_one(".a-price-whole")
     frac_el = card.select_one(".a-price-fraction")
     if not whole_el:
         return None
 
-    whole = whole_el.get_text(strip=True).replace(",", "").rstrip(".")
+    whole = whole_el.get_text(strip=True).replace(",", "").replace("\xa0", "").rstrip(".")
     frac = frac_el.get_text(strip=True) if frac_el else "00"
     try:
         price = float(f"{whole}.{frac}")
@@ -103,15 +100,14 @@ def _parse_card(card, query: str) -> dict | None:
 
     link = card.select_one("h2 a")
     href = link["href"] if link and link.get("href") else ""
-    url = f"https://www.amazon.com{href}" if href.startswith("/") else href
-    # Strip tracking params to keep URL clean
+    url = f"{_BASE_URL}{href}" if href.startswith("/") else href
     url = url.split("?")[0] if url else ""
 
     return {
         "store": "Amazon",
         "title": title,
         "price": price,
-        "currency": "USD",
+        "currency": "ZAR",
         "url": url,
         "scraped_at": datetime.now().isoformat(),
         "search_query": query,
@@ -121,5 +117,5 @@ def _parse_card(card, query: str) -> dict | None:
 def _is_relevant(title: str) -> bool:
     t = title.lower()
     has_size = "65" in t or '65"' in t
-    has_tv = any(kw in t for kw in ("tv", "television", "qled", "oled", "qned"))
+    has_tv = any(kw in t for kw in ("tv", "television", "qled", "oled", "qned", "led"))
     return has_size and has_tv
