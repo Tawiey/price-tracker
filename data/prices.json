@@ -6,24 +6,84 @@
       "store": "Takealot",
       "title": "Samsung 65\" Neo QLED 4K Smart TV QN65QN90C",
       "currency": "ZAR",
-      "url": "https://www.takealot.com/samsung/PLID123",
+      "url": "https://www.takealot.com/all?qsearch=Samsung+65+inch+Neo+QLED+4K+TV&sortby=Relevance",
       "history": [
-        { "date": "2026-02-21", "price": 13833 },
-        { "date": "2026-03-23", "price": 14171 },
-        { "date": "2026-04-22", "price": 14963 },
-        { "date": "2026-05-22", "price": 14654 }
+        { "date": "2026-02-01", "price": 13833 },
+        { "date": "2026-03-01", "price": 14171 },
+        { "date": "2026-04-01", "price": 14963 },
+        { "date": "2026-05-01", "price": 14654 }
       ]
     },
     {
       "store": "Takealot",
-      "title": "LG 65\" OLED evo C3 4K Smart TV OLED65C3",
+      "title": "LG 65\" OLED evo C3 4K Smart TV OLED65C3PSA",
       "currency": "ZAR",
-      "url": "https://www.takealot.com/lg/PLID456",
+      "url": "https://www.takealot.com/all?qsearch=LG+65+inch+OLED+C3+4K+Smart+TV&sortby=Relevance",
       "history": [
-        { "date": "2026-02-21", "price": 13909 },
-        { "date": "2026-03-23", "price": 14287 },
-        { "date": "2026-04-22", "price": 14989 },
-        { "date": "2026-05-22", "price": 14200 }
+        { "date": "2026-02-01", "price": 13909 },
+        { "date": "2026-03-01", "price": 14287 },
+        { "date": "2026-04-01", "price": 14989 },
+        { "date": "2026-05-01", "price": 14200 }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "Hisense 65\" QLED 4K Smart TV 65U7K",
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/all?qsearch=Hisense+65+inch+QLED+4K+Smart+TV&sortby=Relevance",
+      "history": [
+        { "date": "2026-02-01", "price": 9499 },
+        { "date": "2026-03-01", "price": 9999 },
+        { "date": "2026-04-01", "price": 9499 },
+        { "date": "2026-05-01", "price": 8999 }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "TCL 65\" QLED 4K Smart TV 65C735",
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/all?qsearch=TCL+65+inch+QLED+4K+Smart+TV&sortby=Relevance",
+      "history": [
+        { "date": "2026-02-01", "price": 8299 },
+        { "date": "2026-03-01", "price": 7999 },
+        { "date": "2026-04-01", "price": 8499 },
+        { "date": "2026-05-01", "price": 7899 }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "Samsung 65-Inch Neo QLED 4K Smart TV QN65QN90C",
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/s?k=Samsung+65+inch+Neo+QLED+4K+TV",
+      "history": [
+        { "date": "2026-02-01", "price": 14200 },
+        { "date": "2026-03-01", "price": 13900 },
+        { "date": "2026-04-01", "price": 14800 },
+        { "date": "2026-05-01", "price": 14100 }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "LG 65-Inch OLED evo C3 4K Smart TV OLED65C3PSA",
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/s?k=LG+65+inch+OLED+C3+4K+TV",
+      "history": [
+        { "date": "2026-02-01", "price": 13500 },
+        { "date": "2026-03-01", "price": 14000 },
+        { "date": "2026-04-01", "price": 13800 },
+        { "date": "2026-05-01", "price": 13200 }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "Hisense 65-Inch QLED 4K Smart TV 65U7K",
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/s?k=Hisense+65+inch+QLED+4K+TV",
+      "history": [
+        { "date": "2026-02-01", "price": 9200 },
+        { "date": "2026-03-01", "price": 9500 },
+        { "date": "2026-04-01", "price": 8900 },
+        { "date": "2026-05-01", "price": 8700 }
       ]
     }
   ]
