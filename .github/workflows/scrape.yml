@@ -5,8 +5,12 @@ on:
     - cron: '0 8 1 * *'  # 1st of every month at 10:00 SAST
   workflow_dispatch:
   # Any change to the scraper is validated by a real run, so a broken parser
-  # is caught immediately rather than a month later.
+  # is caught immediately rather than a month later. Restricted to main: on a
+  # feature branch this would commit a second copy of the day's prices there
+  # and fork the data from main.
   push:
+    branches:
+      - main
     paths:
       - 'scripts/**'
       - '.github/workflows/scrape.yml'
