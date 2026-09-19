@@ -8,7 +8,7 @@ import time
 import requests
 from bs4 import BeautifulSoup
 
-from .takealot import parse_size
+from .common import parse_size, reject_reason
 
 logger = logging.getLogger(__name__)
 
@@ -89,18 +89,11 @@ def _price_of(card):
 def _parse_card(card, sizes, max_price: float):
     # The title sits in `h2 span`; `h2 a span` no longer matches.
     title_el = card.select_one("h2 span") or card.select_one("h2")
-    if not title_el:
-        return None
-    title = title_el.get_text(strip=True)
-    if not title:
-        return None
-
+    title = title_el.get_text(strip=True) if title_el else ""
     size = parse_size(title)
-    if size not in sizes:
-        return None
-
     price = _price_of(card)
-    if price is None or price > max_price:
+
+    if reject_reason(title, size, price, max_price, sizes):
         return None
 
     asin = card.get("data-asin")

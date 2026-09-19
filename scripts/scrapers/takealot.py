@@ -1,9 +1,11 @@
 from __future__ import annotations
 
 import logging
-import re
+from collections import Counter
 
 import requests
+
+from .common import parse_size, reject_reason
 
 logger = logging.getLogger(__name__)
 
@@ -19,14 +21,6 @@ _HEADERS = {
     "Referer": "https://www.takealot.com/",
     "Origin": "https://www.takealot.com",
 }
-
-# Matches 65", 65”, "65 inch", "65-inch"
-_SIZE_RE = re.compile(r'(\d{2,3})\s*(?:"|”|-?\s*inch\b)', re.IGNORECASE)
-
-
-def parse_size(title: str):
-    m = _SIZE_RE.search(title or "")
-    return int(m.group(1)) if m else None
 
 
 def scrape(query: str, sizes, max_price: float = 15000) -> list[dict]:
@@ -46,27 +40,27 @@ def scrape(query: str, sizes, max_price: float = 15000) -> list[dict]:
         logger.warning("Takealot returned no rows for %r", query)
         return []
 
-    out = []
+    out, reasons, samples = [], Counter(), []
     for item in results:
-        try:
-            product = _parse(item, sizes, max_price)
-        except Exception as exc:
-            logger.debug("Skipping Takealot item: %s", exc)
-            continue
+        product, reason, sample = _parse(item, sizes, max_price)
         if product:
             out.append(product)
+        else:
+            reasons[reason] += 1
+            if len(samples) < 3:
+                samples.append(sample)
+
+    if not out:
+        logger.warning("Takealot %r: %d rows, none kept. reasons=%s samples=%s",
+                       query, len(results), dict(reasons), samples)
     return out
 
 
 def _parse(item: dict, sizes, max_price: float):
+    """Returns (product | None, reject_reason, sample_tuple)."""
     core = item.get("core") or {}
     title = (core.get("title") or "").strip()
-    if not title:
-        return None
-
     size = parse_size(title)
-    if size not in sizes:
-        return None
 
     buybox = item.get("buybox_summary") or {}
     price = buybox.get("price")
@@ -74,12 +68,12 @@ def _parse(item: dict, sizes, max_price: float):
         # Multi-variant listings expose a list of prices instead of a scalar.
         prices = buybox.get("prices") or []
         price = min(prices) if prices else None
-    if price is None:
-        return None
+    price = float(price) if price is not None else None
 
-    price = float(price)
-    if price > max_price:
-        return None
+    sample = (title[:48], size, price)
+    reason = reject_reason(title, size, price, max_price, sizes)
+    if reason:
+        return None, reason, sample
 
     slug = core.get("slug") or ""
     plid = core.get("id")
@@ -92,4 +86,4 @@ def _parse(item: dict, sizes, max_price: float):
         "price": round(price, 2),
         "currency": "ZAR",
         "url": url,
-    }
+    }, None, sample

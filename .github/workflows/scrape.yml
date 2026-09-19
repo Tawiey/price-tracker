@@ -29,6 +29,9 @@ jobs:
       - name: Install dependencies
         run: pip install -r scripts/requirements.txt
 
+      - name: Test accessory filters
+        run: python scripts/test_filters.py
+
       # Exits non-zero if nothing was collected from either store, so a broken
       # scraper fails the run instead of committing a bare date bump.
       - name: Run scraper
