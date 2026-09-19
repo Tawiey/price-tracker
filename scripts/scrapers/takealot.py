@@ -58,11 +58,15 @@ def scrape(query: str, sizes, max_price: float = 15000) -> list[dict]:
 
 def _parse(item: dict, sizes, max_price: float):
     """Returns (product | None, reject_reason, sample_tuple)."""
-    core = item.get("core") or {}
+    # Each row wraps its fields in `product_views`; `core` and `buybox_summary`
+    # live one level down. Falling back to the row itself keeps this working if
+    # Takealot ever flattens the shape.
+    view = item.get("product_views") or item
+    core = view.get("core") or {}
     title = (core.get("title") or "").strip()
     size = parse_size(title)
 
-    buybox = item.get("buybox_summary") or {}
+    buybox = view.get("buybox_summary") or {}
     price = buybox.get("price")
     if price is None:
         # Multi-variant listings expose a list of prices instead of a scalar.
