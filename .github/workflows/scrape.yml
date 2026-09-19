@@ -4,6 +4,12 @@ on:
   schedule:
     - cron: '0 8 1 * *'  # 1st of every month at 10:00 SAST
   workflow_dispatch:
+  # Any change to the scraper is validated by a real run, so a broken parser
+  # is caught immediately rather than a month later.
+  push:
+    paths:
+      - 'scripts/**'
+      - '.github/workflows/scrape.yml'
 
 permissions:
   contents: write
@@ -23,6 +29,8 @@ jobs:
       - name: Install dependencies
         run: pip install -r scripts/requirements.txt
 
+      # Exits non-zero if nothing was collected from either store, so a broken
+      # scraper fails the run instead of committing a bare date bump.
       - name: Run scraper
         run: python scripts/scrape.py
 
@@ -34,6 +42,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No new data."
           else
-            git commit -m "chore: price update $(date +'%Y-%m')"
+            git commit -m "chore: price update $(date +'%Y-%m-%d')"
             git push
           fi

@@ -1,69 +1,95 @@
 from __future__ import annotations
+
 import logging
+import re
+
 import requests
-from datetime import datetime
 
 logger = logging.getLogger(__name__)
 
 _API_URL = "https://api.takealot.com/rest/v-1-9-0/searches/products"
+
 _HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-    "Accept": "application/json, text/plain, */*",
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+        "(KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+    ),
+    "Accept": "application/json",
     "Accept-Language": "en-ZA,en;q=0.9",
     "Referer": "https://www.takealot.com/",
     "Origin": "https://www.takealot.com",
 }
 
+# Matches 65", 65”, "65 inch", "65-inch"
+_SIZE_RE = re.compile(r'(\d{2,3})\s*(?:"|”|-?\s*inch\b)', re.IGNORECASE)
 
-def scrape(query: str, max_price: float = 15000) -> list[dict]:
-    params = {"userinit": "false", "search": query, "newsearch": "true",
-              "sort": "BestMatch", "filters": "", "start": 0, "plp": "true"}
-    try:
-        resp = requests.get(_API_URL, params=params, headers=_HEADERS, timeout=15)
-        resp.raise_for_status()
-        data = resp.json()
-    except Exception as exc:
-        logger.error("Takealot error for %r: %s", query, exc)
+
+def parse_size(title: str):
+    m = _SIZE_RE.search(title or "")
+    return int(m.group(1)) if m else None
+
+
+def scrape(query: str, sizes, max_price: float = 15000) -> list[dict]:
+    """Search Takealot. Raises on transport/HTTP failure so callers can see it."""
+    # NOTE: the param is `qsearch`. Passing `search` is silently ignored and
+    # Takealot returns an unrelated default product list.
+    params = {"qsearch": query, "start": 0, "rows": 50, "detail": "mlisting"}
+    resp = requests.get(_API_URL, params=params, headers=_HEADERS, timeout=25)
+    resp.raise_for_status()
+    data = resp.json()
+
+    # Results are nested under sections.products, not at the top level.
+    results = (data.get("sections", {})
+                   .get("products", {})
+                   .get("results", []))
+    if not results:
+        logger.warning("Takealot returned no rows for %r", query)
         return []
 
-    results = []
-    for item in data.get("results", []):
+    out = []
+    for item in results:
         try:
-            product = _parse(item, query)
-        except Exception:
+            product = _parse(item, sizes, max_price)
+        except Exception as exc:
+            logger.debug("Skipping Takealot item: %s", exc)
             continue
-        if product and product["price"] <= max_price:
-            results.append(product)
-    return results
+        if product:
+            out.append(product)
+    return out
 
 
-def _parse(item: dict, query: str) -> dict | None:
-    title = (
-        item.get("title") or
-        item.get("product_views", {}).get("title") or
-        item.get("name", "")
-    ).strip()
-    if not title or not _is_relevant(title):
+def _parse(item: dict, sizes, max_price: float):
+    core = item.get("core") or {}
+    title = (core.get("title") or "").strip()
+    if not title:
         return None
 
-    buybox = item.get("buybox_summary", {})
-    price = buybox.get("price") or buybox.get("listing_price") or item.get("price")
+    size = parse_size(title)
+    if size not in sizes:
+        return None
+
+    buybox = item.get("buybox_summary") or {}
+    price = buybox.get("price")
+    if price is None:
+        # Multi-variant listings expose a list of prices instead of a scalar.
+        prices = buybox.get("prices") or []
+        price = min(prices) if prices else None
     if price is None:
         return None
-    price = float(price)
-    if price > 500_000:
-        price /= 100
 
-    slug = item.get("core", {}).get("slug", "")
+    price = float(price)
+    if price > max_price:
+        return None
+
+    slug = core.get("slug") or ""
+    plid = core.get("id")
+    url = f"https://www.takealot.com/{slug}/PLID{plid}" if slug and plid else ""
+
     return {
         "store": "Takealot",
         "title": title,
+        "size": size,
         "price": round(price, 2),
         "currency": "ZAR",
-        "url": f"https://www.takealot.com/{slug}" if slug else "",
+        "url": url,
     }
-
-
-def _is_relevant(title: str) -> bool:
-    t = title.lower()
-    return "65" in t and any(k in t for k in ("tv", "television", "qled", "oled", "qned", "led"))

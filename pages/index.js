@@ -6,6 +6,8 @@ import dynamic from 'next/dynamic'
 
 const PriceChart = dynamic(() => import('../components/PriceChart'), { ssr: false })
 
+const SIZES = [65, 75, 85]
+
 export async function getStaticProps() {
   const filePath = path.join(process.cwd(), 'data', 'prices.json')
   let pricesData = { last_updated: null, scrape_count: 0, products: [] }
@@ -28,23 +30,45 @@ function dealInfo(history) {
   return { current, min, abovePct }
 }
 
+// Products scraped before size tracking fall back to reading it off the title.
+function sizeOf(product) {
+  if (product.size) return product.size
+  const m = String(product.title || '').match(/\b(65|75|85)\b/)
+  return m ? Number(m[1]) : null
+}
+
 function fmt(n) {
   return `R${Math.round(n).toLocaleString('en-ZA')}`
 }
 
 export default function Home({ pricesData }) {
   const [chartProduct, setChartProduct] = useState(null)
+  const [activeSize, setActiveSize] = useState('all')
   const { last_updated, scrape_count, products } = pricesData
 
-  const sorted = [...products].sort((a, b) => {
-    return dealInfo(a.history).current - dealInfo(b.history).current
-  })
+  const countFor = (size) =>
+    size === 'all'
+      ? products.length
+      : products.filter((p) => sizeOf(p) === size).length
+
+  const visible = (activeSize === 'all'
+    ? [...products]
+    : products.filter((p) => sizeOf(p) === activeSize)
+  ).sort((a, b) => dealInfo(a.history).current - dealInfo(b.history).current)
+
+  const tabs = [
+    { key: 'all', label: 'All sizes' },
+    ...SIZES.map((s) => ({ key: s, label: `${s}"` })),
+  ]
 
   return (
     <>
       <Head>
-        <title>65&quot; TV Price Tracker</title>
-        <meta name="description" content="Track 65 inch 4K TV prices on Takealot and Amazon South Africa" />
+        <title>TV Price Tracker</title>
+        <meta
+          name="description"
+          content="Track 65, 75 and 85 inch 4K TV prices on Takealot and Amazon South Africa"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
@@ -52,11 +76,11 @@ export default function Home({ pricesData }) {
         <div className="max-w-6xl mx-auto px-4 py-10">
 
           {/* Header */}
-          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-10">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-8">
             <div>
-              <h1 className="text-3xl font-bold tracking-tight">65&quot; TV Price Tracker</h1>
+              <h1 className="text-3xl font-bold tracking-tight">TV Price Tracker</h1>
               <p className="text-slate-400 mt-1 text-sm">
-                Tracking 4K &amp; Neo OLED TVs under R15,000 &middot; Takealot &amp; Amazon SA
+                65&quot;, 75&quot; &amp; 85&quot; 4K TVs under R15,000 &middot; Takealot &amp; Amazon SA
               </p>
             </div>
             <div className="flex items-center gap-3">
@@ -69,10 +93,33 @@ export default function Home({ pricesData }) {
             </div>
           </div>
 
+          {/* Size tabs */}
+          <div className="flex flex-wrap gap-2 mb-8">
+            {tabs.map(({ key, label }) => {
+              const active = activeSize === key
+              return (
+                <button
+                  key={key}
+                  onClick={() => setActiveSize(key)}
+                  className={`px-4 py-2 rounded-lg text-sm font-medium border transition-colors ${
+                    active
+                      ? 'bg-blue-600 border-blue-500 text-white'
+                      : 'bg-slate-900 border-slate-800 text-slate-400 hover:text-slate-200 hover:border-slate-700'
+                  }`}
+                >
+                  {label}
+                  <span className={active ? 'text-blue-200 ml-2' : 'text-slate-600 ml-2'}>
+                    {countFor(key)}
+                  </span>
+                </button>
+              )
+            })}
+          </div>
+
           {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
             {[
-              { label: 'Products', value: products.length },
+              { label: 'Showing', value: visible.length },
               { label: 'Scrape runs', value: scrape_count },
               { label: 'Budget', value: 'R15,000' },
               { label: 'Stores', value: 2 },
@@ -85,8 +132,8 @@ export default function Home({ pricesData }) {
           </div>
 
           {/* Best price banner */}
-          {sorted.length > 0 && (() => {
-            const { current, min } = dealInfo(sorted[0].history)
+          {visible.length > 0 && (() => {
+            const { current, min } = dealInfo(visible[0].history)
             return current <= min ? (
               <div className="bg-green-900/30 border border-green-700 rounded-xl px-5 py-3 mb-6 text-sm">
                 <span className="text-green-400 font-semibold">Lowest price right now</span>
@@ -96,7 +143,7 @@ export default function Home({ pricesData }) {
           })()}
 
           {/* Table */}
-          {sorted.length > 0 ? (
+          {visible.length > 0 ? (
             <>
               <div className="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden">
                 <div className="px-6 py-4 border-b border-slate-800">
@@ -110,6 +157,7 @@ export default function Home({ pricesData }) {
                     <thead>
                       <tr className="text-slate-400 text-xs uppercase tracking-wider border-b border-slate-800">
                         <th className="text-left px-6 py-3 font-medium">Store</th>
+                        <th className="text-left px-6 py-3 font-medium">Size</th>
                         <th className="text-left px-6 py-3 font-medium">Product</th>
                         <th className="text-right px-6 py-3 font-medium">Price</th>
                         <th className="text-right px-6 py-3 font-medium">Lowest ever</th>
@@ -118,8 +166,9 @@ export default function Home({ pricesData }) {
                       </tr>
                     </thead>
                     <tbody>
-                      {sorted.map((product, i) => {
+                      {visible.map((product, i) => {
                         const { current, min, abovePct } = dealInfo(product.history)
+                        const size = sizeOf(product)
                         const priceColor =
                           abovePct <= 1
                             ? 'text-green-400'
@@ -129,7 +178,7 @@ export default function Home({ pricesData }) {
 
                         return (
                           <tr
-                            key={i}
+                            key={`${product.store}-${product.title}-${i}`}
                             className={`border-b border-slate-800/60 hover:bg-slate-800/50 transition-colors ${
                               product.url ? 'cursor-pointer' : ''
                             }`}
@@ -146,14 +195,17 @@ export default function Home({ pricesData }) {
                                 </span>
                               )}
                             </td>
+                            <td className="px-6 py-4 whitespace-nowrap text-slate-300 font-medium">
+                              {size ? `${size}"` : '—'}
+                            </td>
                             <td className="px-6 py-4">
                               <p className="text-slate-100 font-medium leading-snug">
-                                {product.title.length > 70
-                                  ? product.title.slice(0, 70) + '…'
+                                {product.title.length > 65
+                                  ? product.title.slice(0, 65) + '…'
                                   : product.title}
                               </p>
                               <p className="text-slate-500 text-xs mt-0.5">
-                                ZAR &middot; {product.history.length} data point
+                                {product.history.length} data point
                                 {product.history.length !== 1 ? 's' : ''}
                               </p>
                             </td>
@@ -205,9 +257,15 @@ export default function Home({ pricesData }) {
           ) : (
             <div className="bg-slate-900 border border-slate-800 rounded-xl p-16 text-center">
               <p className="text-5xl mb-4">📺</p>
-              <p className="text-xl font-semibold text-slate-200 mb-2">No prices tracked yet</p>
+              <p className="text-xl font-semibold text-slate-200 mb-2">
+                {products.length === 0
+                  ? 'No prices tracked yet'
+                  : `No ${activeSize}" TVs under R15,000 right now`}
+              </p>
               <p className="text-slate-400">
-                Prices will appear here after the first monthly scrape runs via GitHub Actions.
+                {products.length === 0
+                  ? 'Prices will appear here after the next monthly scrape.'
+                  : 'Larger sets rarely fall under R15,000 — check the other size tabs, or wait for a sale.'}
               </p>
             </div>
           )}
