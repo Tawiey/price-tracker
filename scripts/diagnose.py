@@ -79,15 +79,15 @@ def probe_amazon():
         for name, el in checks.items():
             txt = el.get_text(strip=True)[:70] if el else None
             print(f"    {name:32} -> {txt!r}")
-        price_off = card.select_one(".a-price .a-offscreen")
-        whole = card.select_one(".a-price-whole")
-        frac = card.select_one(".a-price-fraction")
+        def txt(el):
+            return el.get_text(strip=True) if el else None
+
         print(f"    {'.a-price .a-offscreen':32} -> "
-              f"{price_off.get_text(strip=True)!r if price_off else None}")
+              f"{txt(card.select_one('.a-price .a-offscreen'))!r}")
         print(f"    {'.a-price-whole':32} -> "
-              f"{whole.get_text(strip=True)!r if whole else None}")
+              f"{txt(card.select_one('.a-price-whole'))!r}")
         print(f"    {'.a-price-fraction':32} -> "
-              f"{frac.get_text(strip=True)!r if frac else None}")
+              f"{txt(card.select_one('.a-price-fraction'))!r}")
         link = card.select_one("h2 a") or card.select_one("a.a-link-normal[href]")
         print(f"    {'href':32} -> {(link.get('href')[:80] if link else None)!r}")
         print()
