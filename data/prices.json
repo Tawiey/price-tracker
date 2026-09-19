@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-09-19",
-  "scrape_count": 1,
+  "scrape_count": 2,
   "products": [
     {
       "store": "Amazon",
@@ -467,6 +467,526 @@
         {
           "date": "2026-09-19",
           "price": 11639.15
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "Hisense 65\" E7Q QLED Smart TV with AI Upscaler, Dolby Atmos & Smooth Motion",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/hisense-65-e7q-qled-smart-tv-with-ai-upscaler-dolby-atmos-smooth/PLID98257972",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 8999.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "SAMSUNG 65 inch Q7F 4K QLED Samsung Vision AI TV",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/samsung-65-inch-q7f-4k-qled-samsung-vision-ai-tv/PLID101190932",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 10699.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "LEXUCO 65-inch 4K UHD HDR Google TV Combo with Soundbar and Wireless Mouse",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/lexuco-65-inch-4k-uhd-hdr-google-tv-combo-with-soundbar-and-wire/PLID102977861",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 9999.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "Xiaomi A Pro 65\" QLED 4K Smart TV (HDR10, Google TV, Dolby Audio, 60Hz)",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/xiaomi-a-pro-65-qled-4k-smart-tv-hdr10-google-tv-dolby-audio-60h/PLID98258081",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 8499.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "Toshiba 65\" M450RP 4K QLED Smart TV with Dolby Atmos & Quantum Dot",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/toshiba-65-m450rp-4k-qled-smart-tv-with-dolby-atmos-quantum-dot/PLID99830106",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 8399.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "Hisense 75\" A6Q 4K UHD Smart TV with AI Upscaler & Voice Control",
+      "size": 75,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/hisense-75-a6q-4k-uhd-smart-tv-with-ai-upscaler-voice-control/PLID98257974",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 10999.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "65 Inch Google TV 4K UHD Smart LED HDR Dolby WiFi Frameless TV",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/65-inch-google-tv-4k-uhd-smart-led-hdr-dolby-wifi-frameless-tv/PLID102830184",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 10999.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "65 Inch Smart 4K UHD LED TV WiFi HDR Do-lby Audio Netflix YouTube",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/65-inch-smart-4k-uhd-led-tv-wifi-hdr-do-lby-audio-netflix-youtub/PLID102825131",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 12999.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "TCL 65\" P6L 4K UHD Google Smart TV with Dolby Audio",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/tcl-65-p6l-4k-uhd-google-smart-tv-with-dolby-audio/PLID102438121",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 9999.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "Skyworth 65\" Q6600K 120Hz 4K QLED+ Google Smart TV with Dolby Digital",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/skyworth-65-q6600k-120hz-4k-qled-google-smart-tv-with-dolby-digi/PLID102492319",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 8999.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "Hisense 65\" E8S 144Hz 4K MiniLED Smart TV with FreeSync Premium",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/hisense-65-e8s-144hz-4k-miniled-smart-tv-with-freesync-premium/PLID102387715",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 12999.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "LG 65\" NU850B6LA 4K UHD Smart TV with HDR10 & AI Magic Remote",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/lg-65-nu850b6la-4k-uhd-smart-tv-with-hdr10-ai-magic-remote/PLID102387880",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 9999.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "Samsung 65\" QN70H Neo QLED DLG120Hz AI Smart TV with 4K Upscaling & MotionX",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/samsung-65-qn70h-neo-qled-dlg120hz-ai-smart-tv-with-4k-upscaling/PLID102483693",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 14999.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "Samsung 65\" M70H MiniLED AI Smart TV with 4K Upscaling & MotionX",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/samsung-65-m70h-miniled-ai-smart-tv-with-4k-upscaling-motionx/PLID102221059",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 9998.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "Samsung 65\" M80H 144Hz MiniLED AI Smart TV with 4K Upscaling & MotionX",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/samsung-65-m80h-144hz-miniled-ai-smart-tv-with-4k-upscaling-moti/PLID102220997",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 11999.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "Skyworth 75\" Q6600H 120Hz 4K QLED Google Smart TV with Dolby Digital",
+      "size": 75,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/skyworth-75-q6600h-120hz-4k-qled-google-smart-tv-with-dolby-digi/PLID99232316",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 10999.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "Samsung 65\" Q8F 4K QLED Smart TV - Adaptive Sound, Vision AI, SmartThings",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/samsung-65-q8f-4k-qled-smart-tv-adaptive-sound-vision-ai-smartth/PLID100506554",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 12990.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "TCL 65\" C6K 144Hz 4K MiniLED Google Smart TV",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/tcl-65-c6k-144hz-4k-miniled-google-smart-tv/PLID97491908",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 12999.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "Hisense 65\" U6S MiniLED Smart TV with Built-In-Subwoofer & Al-Smooth-Motion",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/hisense-65-u6s-miniled-smart-tv-with-built-in-subwoofer-al-smoot/PLID102483795",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 9999.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "TCL 75\" P8K 144Hz 4K QLED Google Smart TV with ONKYO 2.1",
+      "size": 75,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/tcl-75-p8k-144hz-4k-qled-google-smart-tv-with-onkyo-2-1/PLID97491905",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 12999.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "Hisense 65\" Smart UHD LED TV",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/hisense-65-smart-uhd-led-tv/PLID41711716",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 8999.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "Samsung 65\" QLED Smart TV - QA65Q7FAAUXXA 4K HDR10+ Smart Quantum HDR",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/samsung-65-qled-smart-tv-qa65q7faauxxa-4k-hdr10-smart-quantum-hd/PLID100506553",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 10500.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "JVC 65\" 4k Qled Edgeless Smart Tv Lt-65n675b",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/jvc-65-4k-qled-edgeless-smart-tv-lt-65n675b/PLID101274124",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 8799.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "JVC 65\" 4k Qled Edgeless Smart Tv Lt-65n675a",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/jvc-65-4k-qled-edgeless-smart-tv-lt-65n675a/PLID101274123",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 8799.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "Hisense 75\" E7Q QLED Smart TV with AI Upscaler, Dolby Atmos & Smooth Motion",
+      "size": 75,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/hisense-75-e7q-qled-smart-tv-with-ai-upscaler-dolby-atmos-smooth/PLID98366566",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 11999.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "LG 75\" QNED70B6T 4K QNED AI Smart TV with webOS26 & AI Magic Remote",
+      "size": 75,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/lg-75-qned70b6t-4k-qned-ai-smart-tv-with-webos26-ai-magic-remote/PLID102389476",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 14999.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "Toshiba 75\" Z670RP 144Hz 4K QLED Smart TV with HDR & Dolby Atmos",
+      "size": 75,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/toshiba-75-z670rp-144hz-4k-qled-smart-tv-with-hdr-dolby-atmos/PLID98383922",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 11999.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "LG 75\" NU850B6LA 4K UHD Smart TV with HDR10 & AI Magic Remote",
+      "size": 75,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/lg-75-nu850b6la-4k-uhd-smart-tv-with-hdr10-ai-magic-remote/PLID102438994",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 13999.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "Samsung 75\" M70H MiniLED AI Smart TV with 4K Upscaling & MotionX",
+      "size": 75,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/samsung-75-m70h-miniled-ai-smart-tv-with-4k-upscaling-motionx/PLID102221044",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 13998.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "Hisense 75\" Q7N 144Hz 4K QLED Gaming Smart TV & Dolby ATMOS",
+      "size": 75,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/hisense-75-q7n-144hz-4k-qled-gaming-smart-tv-dolby-atmos/PLID95887701",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 13299.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "TCL 75\" C6KS 4K Quantum Dot MiniLED Google Smart TV",
+      "size": 75,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/tcl-75-c6ks-4k-quantum-dot-miniled-google-smart-tv/PLID97593153",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 13999.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "Toshiba 85\" C350RP 4K UHD Smart TV with HDR & Dolby Atmos",
+      "size": 85,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/toshiba-85-c350rp-4k-uhd-smart-tv-with-hdr-dolby-atmos/PLID99698229",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 13999.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "LEXUCO 75\" UHD 4K Smart WebOS TV - Frameless Design",
+      "size": 75,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/lexuco-75-uhd-4k-smart-webos-tv-frameless-design/PLID103362141",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 9840.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "Skyworth 75\" X6600K 120Hz 4K QD MiniLED Google Smart TV with Dolby Vision",
+      "size": 75,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/skyworth-75-x6600k-120hz-4k-qd-miniled-google-smart-tv-with-dolb/PLID101546144",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 13999.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "Hisense 75\" U6S MiniLED Smart TV with Built-In-Subwoofer & Al-Smooth-Motion",
+      "size": 75,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/hisense-75-u6s-miniled-smart-tv-with-built-in-subwoofer-al-smoot/PLID102245604",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 13999.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "Hisense 75\" Q7Q 144Hz 4K UHD QLED Gaming Smart TV with Dolby Vision",
+      "size": 75,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/hisense-75-q7q-144hz-4k-uhd-qled-gaming-smart-tv-with-dolby-visi/PLID98005849",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 12999.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "JVC 75\" NQ7165 144Hz 4K QLED Google Smart TV with Dolby Atmos",
+      "size": 75,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/jvc-75-nq7165-144hz-4k-qled-google-smart-tv-with-dolby-atmos/PLID100783061",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 10999.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "LEXUCO 85\" UHD 4K Smart WebOS TV - Frameless Design",
+      "size": 85,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/lexuco-85-uhd-4k-smart-webos-tv-frameless-design/PLID102827314",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 12220.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "Toshiba 85\" M450RP 4K QLED Smart TV with Dolby Atmos & Quantum Dot",
+      "size": 85,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/toshiba-85-m450rp-4k-qled-smart-tv-with-dolby-atmos-quantum-dot/PLID99830111",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 14999.0
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "Skyworth Q6600K 65\" QLED+ 32GB Cinema Google TV",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0H6GKH1R5",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 8549.1
         }
       ]
     }
