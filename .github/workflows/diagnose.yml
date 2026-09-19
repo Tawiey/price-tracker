@@ -5,6 +5,10 @@ name: Scraper Diagnostic
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/diagnose.py'
+      - '.github/workflows/diagnose.yml'
 
 jobs:
   diagnose:
