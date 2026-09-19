@@ -1,5 +1,474 @@
 {
-  "last_updated": null,
-  "scrape_count": 0,
-  "products": []
+  "last_updated": "2026-09-19",
+  "scrape_count": 1,
+  "products": [
+    {
+      "store": "Amazon",
+      "title": "TCL 65 Inch 4K QLED Smart TV, Google TV, Dolby Vision",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0GLZL4BKZ",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 8729.03
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "Xiaomi 65-Inch 4K 120HZ QLED Google Smart TV A Pro",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0F63PSJ2D",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 8499.0
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "Hisense 65\" Smart 4K UHD TV-65A6Q",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0FP2TXN2Y",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 8399.0
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "Samsung 65-Inch QLED Q60D 4K Tizen OS Smart TV",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0F5HZP4QN",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 11000.0
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "TCL P6L 4K UHD Google 65-Inch Smart TV with Dolby Audio",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B08HJVGF69",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 9499.0
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "Xiaomi 65-Inch 4K 240Hz QD-Mini LED Google Smart TV",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0DJWFB8ZG",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 11734.13
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "Toshiba 65\" C450MN QLED Premium 4K UHD Smart LED TV with Dolby Vision & Dolby Atmos, REGZA Engine ZR, Sports Mode, Built-in Wi-Fi, VIDAA OS, Slim Design",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0CPSY2JRW",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 8999.0
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "TCL 65P8K Television 65 Inch Smart TV 4K QLED Colorful Quantum Crystal HDR 10+ Gaming Google TV, 144Hz Native Refresh Rate, ONKYO 2.1 Hi-Fi, Dolby Atmos, DTS Virtual X, MEMC, Game Master (2025 Model)",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0FJT8381G",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 9999.0
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "TCL 65-Inch 4K UHD QLED Smart Google TV",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0H2YPZ1PX",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 10023.0
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "Hisense 65\" 4K MiniLED Smart TV, 144Hz, Dolby Digital",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0F32JG9DR",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 12999.0
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "LG UA80 HDR10 webOS25 2025 UHD 4K AI 65-Inch Smart TV",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0FJS4LXQY",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 9308.0
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "Samsung 65\" 144Hz Mini LED DLG 240Hz AI Smart TV with 4K Upscaling and Motion Accelerator",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0H3PBZY5T",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 11999.0
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "Samsung QA65Q7FAAUXXA QLED Q7F 4K Vision AI 65-Inch Smart TV",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0FVFR811N",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 10699.0
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "Hisense 65\" U6S 4K UHD 60Hz MiniLED Smart TV with Built-In-Subwoofer & Al-Smooth-Motion, Anyview Cast, Multiple Connectivity, Light Sensor, Gaming Ready",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0HFM7T5M7",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 9999.0
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "Samsung UA65U8000FUXXA U8000F Crystal 4K UHD 65-Inch Smart TV",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0FVFQ8KVF",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 9999.0
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "LEXUCO 65-Inch UHD 4K Google TV \u2013 Frameless Smart TV",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0GTZVP6DP",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 6930.0
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "Skyworth 65\" X6600H 4K QD-MiniLED Google Smart TV, Eye Care 5.0 Display, Dolby Vision & Dolby Atmos, HDR10+, 120Hz Turbo Motion, Local Dimming, MEMC, Game Mode",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0FS6WLF1V",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 9999.0
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "Toshiba 65\" M450RP 4K QLED Smart TV with Dolby Atmos & Colourful Quantum Dot, REGZA Engine ZR, AI Motion Enhancer, Backlight control, MEMC",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0FSLL84K3",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 6999.0
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "Hisense 65\" 4K UHD E7Q QLED Smart TV with AI Upscaler & Dolby Atmos, AI Smooth Motion, QLED Colour, Game Mode PLUS, Voice Control, AI Light Sensor",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0F1MRPC4B",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 7856.13
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "Samsung 65\" QN70H Neo QLED DLG 120Hz AI Smart TV with 4K Upscaling & MotionX",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0H7BJVSZN",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 14999.0
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "Lexuco 65 Inch 4K UHD Google TV Frameless",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0HJRC4D7T",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 7499.0
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "Hisense 65\" U7Q PRO 165Hz Miniled ULED 4K Smart Gaming TV with Dolby Atmos, Hi-view AI Engine Mini-led 165Hz Game Mode Ultra, Memc, Backlight Control",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0F24FL4CL",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 14548.65
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "TCL 65C6K 65-Inch 144Hz 4K MiniLED Android TV",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0FLDV2GCK",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 12999.0
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "Toshiba 65\" 144Hz 4K QLED Smart TV with HDR & Dolby Atmos",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0FDKSC7S3",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 9098.0
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "Hisense 65\" Q7Q 144Hz 4K UHD QLED Gaming VIDAA SMART TV with Dolby Vision, Game Mode PRO, QLED Colour, Hi-Concerto, Filmmaker Mode",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0GHNWY76H",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 7999.0
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "Hisense 65\" Q7N 144Hz UHD 4K Smart QLED TV with Quantum Dot & Dolby ATMOS",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0DGQPD8LR",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 14978.4
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "Hisense 65\" U7S 144Hz 4K MiniLED Smart TV with Built-in Subwoofer, Quantum Dot Color, Freeview Plus, Bluetooth 5.4, Anyview Cast",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0HC7DY5MX",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 14824.99
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "Aiwa 2019 Ultra High Definition 4K LED 65-Inch Smart TV, Black",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0CM3CFCDG",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 9888.85
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "SKYWORTH 65X6800K 65 Inch 4K QD-Mini LED Google TV, 144Hz Gaming Smart TV, 128-Zone Local Dimming, Dolby Vision & Atmos, 44W 2.1CH Sound, HDMI 2.1, 3GB+64GB",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0GRWGS3H1",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 12999.0
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "Hisense 65 Inch Flat Screen Mini LED 4K Android 65U6K",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0C6XMCWBR",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 11305.92
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "Hisense 75-inch UHD LED SMART TV, 4K Quantum Dot Colour, 75A6Q",
+      "size": 75,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0FP4W62TW",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 11999.0
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "Samsung Smart TV 75-Inch Mini LED M70H 4K, UHD TV, Mini LED HDR, Motion Xcelerator 144Hz, Dynamic Sound Pack, AI Companion for questions [2026]",
+      "size": 75,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0GYZNMMKS",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 14999.0
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "LEXUCO 75\u201d 4K UHD Google TV \u2013 Smart Entertainment Redefined",
+      "size": 75,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0GV1CPDPW",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 9830.0
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "75 Inch LG QNED AI QNED70A 4K Smart TV 2025",
+      "size": 75,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0H4R8BJBV",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 14248.5
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "Lexuco 75 Inch 4K UHD Smart TV, WebOS, Frameless",
+      "size": 75,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0HJR77SXX",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 12499.0
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "Toshiba 75\" Z570 4K UHD Smart TV with Quantum Dot, 120Hz, HDR10+, Dolby Vision, Dolby Atmos, 2.2CH, HDMI 2.1, VRR, FreeSync Premium, AirPlay, HomeKit, HomeOS U9",
+      "size": 75,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0HK45PMLW",
+      "history": [
+        {
+          "date": "2026-09-19",
+          "price": 11639.15
+        }
+      ]
+    }
+  ]
 }
