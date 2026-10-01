@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-19",
-  "scrape_count": 3,
+  "last_updated": "2026-10-01",
+  "scrape_count": 4,
   "products": [
     {
       "store": "Amazon",
@@ -11,6 +11,10 @@
       "history": [
         {
           "date": "2026-09-19",
+          "price": 8729.03
+        },
+        {
+          "date": "2026-10-01",
           "price": 8729.03
         }
       ]
@@ -25,6 +29,10 @@
         {
           "date": "2026-09-19",
           "price": 8499.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 8499.0
         }
       ]
     },
@@ -37,6 +45,10 @@
       "history": [
         {
           "date": "2026-09-19",
+          "price": 8399.0
+        },
+        {
+          "date": "2026-10-01",
           "price": 8399.0
         }
       ]
@@ -51,6 +63,10 @@
         {
           "date": "2026-09-19",
           "price": 11000.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 11000.0
         }
       ]
     },
@@ -63,6 +79,10 @@
       "history": [
         {
           "date": "2026-09-19",
+          "price": 9499.0
+        },
+        {
+          "date": "2026-10-01",
           "price": 9499.0
         }
       ]
@@ -90,6 +110,10 @@
         {
           "date": "2026-09-19",
           "price": 8999.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 8999.0
         }
       ]
     },
@@ -116,6 +140,10 @@
         {
           "date": "2026-09-19",
           "price": 10023.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 8579.0
         }
       ]
     },
@@ -129,6 +157,10 @@
         {
           "date": "2026-09-19",
           "price": 12999.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 11999.0
         }
       ]
     },
@@ -142,6 +174,10 @@
         {
           "date": "2026-09-19",
           "price": 9308.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 12079.0
         }
       ]
     },
@@ -154,6 +190,10 @@
       "history": [
         {
           "date": "2026-09-19",
+          "price": 11999.0
+        },
+        {
+          "date": "2026-10-01",
           "price": 11999.0
         }
       ]
@@ -181,6 +221,10 @@
         {
           "date": "2026-09-19",
           "price": 9999.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 9999.0
         }
       ]
     },
@@ -193,6 +237,10 @@
       "history": [
         {
           "date": "2026-09-19",
+          "price": 9999.0
+        },
+        {
+          "date": "2026-10-01",
           "price": 9999.0
         }
       ]
@@ -220,6 +268,10 @@
         {
           "date": "2026-09-19",
           "price": 9999.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 9999.0
         }
       ]
     },
@@ -233,6 +285,10 @@
         {
           "date": "2026-09-19",
           "price": 6999.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 8399.0
         }
       ]
     },
@@ -246,6 +302,10 @@
         {
           "date": "2026-09-19",
           "price": 7856.13
+        },
+        {
+          "date": "2026-10-01",
+          "price": 8999.0
         }
       ]
     },
@@ -258,6 +318,10 @@
       "history": [
         {
           "date": "2026-09-19",
+          "price": 14999.0
+        },
+        {
+          "date": "2026-10-01",
           "price": 14999.0
         }
       ]
@@ -272,6 +336,10 @@
         {
           "date": "2026-09-19",
           "price": 7499.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 7499.0
         }
       ]
     },
@@ -284,6 +352,10 @@
       "history": [
         {
           "date": "2026-09-19",
+          "price": 14548.65
+        },
+        {
+          "date": "2026-10-01",
           "price": 14548.65
         }
       ]
@@ -298,6 +370,10 @@
         {
           "date": "2026-09-19",
           "price": 12999.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 12349.0
         }
       ]
     },
@@ -311,6 +387,10 @@
         {
           "date": "2026-09-19",
           "price": 9098.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 9102.55
         }
       ]
     },
@@ -324,6 +404,10 @@
         {
           "date": "2026-09-19",
           "price": 7999.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 9999.0
         }
       ]
     },
@@ -337,6 +421,10 @@
         {
           "date": "2026-09-19",
           "price": 14978.4
+        },
+        {
+          "date": "2026-10-01",
+          "price": 13106.1
         }
       ]
     },
@@ -349,6 +437,10 @@
       "history": [
         {
           "date": "2026-09-19",
+          "price": 14824.99
+        },
+        {
+          "date": "2026-10-01",
           "price": 14824.99
         }
       ]
@@ -363,6 +455,10 @@
         {
           "date": "2026-09-19",
           "price": 9888.85
+        },
+        {
+          "date": "2026-10-01",
+          "price": 6448.02
         }
       ]
     },
@@ -375,6 +471,10 @@
       "history": [
         {
           "date": "2026-09-19",
+          "price": 12999.0
+        },
+        {
+          "date": "2026-10-01",
           "price": 12999.0
         }
       ]
@@ -402,6 +502,10 @@
         {
           "date": "2026-09-19",
           "price": 11999.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 11999.0
         }
       ]
     },
@@ -415,6 +519,10 @@
         {
           "date": "2026-09-19",
           "price": 14999.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 14999.0
         }
       ]
     },
@@ -427,6 +535,10 @@
       "history": [
         {
           "date": "2026-09-19",
+          "price": 9830.0
+        },
+        {
+          "date": "2026-10-01",
           "price": 9830.0
         }
       ]
@@ -454,6 +566,10 @@
         {
           "date": "2026-09-19",
           "price": 12499.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 12499.0
         }
       ]
     },
@@ -466,6 +582,10 @@
       "history": [
         {
           "date": "2026-09-19",
+          "price": 11639.15
+        },
+        {
+          "date": "2026-10-01",
           "price": 11639.15
         }
       ]
@@ -480,6 +600,10 @@
         {
           "date": "2026-09-19",
           "price": 8999.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 8999.0
         }
       ]
     },
@@ -493,6 +617,10 @@
         {
           "date": "2026-09-19",
           "price": 10699.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 10700.0
         }
       ]
     },
@@ -506,6 +634,10 @@
         {
           "date": "2026-09-19",
           "price": 9999.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 9999.0
         }
       ]
     },
@@ -518,6 +650,10 @@
       "history": [
         {
           "date": "2026-09-19",
+          "price": 8499.0
+        },
+        {
+          "date": "2026-10-01",
           "price": 8499.0
         }
       ]
@@ -545,6 +681,10 @@
         {
           "date": "2026-09-19",
           "price": 10999.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 10999.0
         }
       ]
     },
@@ -557,6 +697,10 @@
       "history": [
         {
           "date": "2026-09-19",
+          "price": 10999.0
+        },
+        {
+          "date": "2026-10-01",
           "price": 10999.0
         }
       ]
@@ -571,6 +715,10 @@
         {
           "date": "2026-09-19",
           "price": 12999.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 12999.0
         }
       ]
     },
@@ -583,6 +731,10 @@
       "history": [
         {
           "date": "2026-09-19",
+          "price": 9999.0
+        },
+        {
+          "date": "2026-10-01",
           "price": 9999.0
         }
       ]
@@ -597,6 +749,10 @@
         {
           "date": "2026-09-19",
           "price": 8999.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 8999.0
         }
       ]
     },
@@ -609,6 +765,10 @@
       "history": [
         {
           "date": "2026-09-19",
+          "price": 12999.0
+        },
+        {
+          "date": "2026-10-01",
           "price": 12999.0
         }
       ]
@@ -636,6 +796,10 @@
         {
           "date": "2026-09-19",
           "price": 14999.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 14999.0
         }
       ]
     },
@@ -649,6 +813,10 @@
         {
           "date": "2026-09-19",
           "price": 9998.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 9999.0
         }
       ]
     },
@@ -661,6 +829,10 @@
       "history": [
         {
           "date": "2026-09-19",
+          "price": 11999.0
+        },
+        {
+          "date": "2026-10-01",
           "price": 11999.0
         }
       ]
@@ -675,6 +847,10 @@
         {
           "date": "2026-09-19",
           "price": 10999.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 10999.0
         }
       ]
     },
@@ -687,6 +863,10 @@
       "history": [
         {
           "date": "2026-09-19",
+          "price": 12990.0
+        },
+        {
+          "date": "2026-10-01",
           "price": 12990.0
         }
       ]
@@ -701,6 +881,10 @@
         {
           "date": "2026-09-19",
           "price": 12999.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 12999.0
         }
       ]
     },
@@ -713,6 +897,10 @@
       "history": [
         {
           "date": "2026-09-19",
+          "price": 9999.0
+        },
+        {
+          "date": "2026-10-01",
           "price": 9999.0
         }
       ]
@@ -727,6 +915,10 @@
         {
           "date": "2026-09-19",
           "price": 12999.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 12999.0
         }
       ]
     },
@@ -739,6 +931,10 @@
       "history": [
         {
           "date": "2026-09-19",
+          "price": 8999.0
+        },
+        {
+          "date": "2026-10-01",
           "price": 8999.0
         }
       ]
@@ -753,6 +949,10 @@
         {
           "date": "2026-09-19",
           "price": 10500.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 10500.0
         }
       ]
     },
@@ -765,6 +965,10 @@
       "history": [
         {
           "date": "2026-09-19",
+          "price": 8799.0
+        },
+        {
+          "date": "2026-10-01",
           "price": 8799.0
         }
       ]
@@ -779,6 +983,10 @@
         {
           "date": "2026-09-19",
           "price": 8799.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 8799.0
         }
       ]
     },
@@ -791,6 +999,10 @@
       "history": [
         {
           "date": "2026-09-19",
+          "price": 11999.0
+        },
+        {
+          "date": "2026-10-01",
           "price": 11999.0
         }
       ]
@@ -805,6 +1017,10 @@
         {
           "date": "2026-09-19",
           "price": 14999.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 14999.0
         }
       ]
     },
@@ -817,6 +1033,10 @@
       "history": [
         {
           "date": "2026-09-19",
+          "price": 11999.0
+        },
+        {
+          "date": "2026-10-01",
           "price": 11999.0
         }
       ]
@@ -831,6 +1051,10 @@
         {
           "date": "2026-09-19",
           "price": 13999.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 13999.0
         }
       ]
     },
@@ -843,6 +1067,10 @@
       "history": [
         {
           "date": "2026-09-19",
+          "price": 13998.0
+        },
+        {
+          "date": "2026-10-01",
           "price": 13998.0
         }
       ]
@@ -857,6 +1085,10 @@
         {
           "date": "2026-09-19",
           "price": 13299.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 13299.0
         }
       ]
     },
@@ -870,6 +1102,10 @@
         {
           "date": "2026-09-19",
           "price": 13999.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 12999.0
         }
       ]
     },
@@ -882,6 +1118,10 @@
       "history": [
         {
           "date": "2026-09-19",
+          "price": 13999.0
+        },
+        {
+          "date": "2026-10-01",
           "price": 13999.0
         }
       ]
@@ -896,6 +1136,10 @@
         {
           "date": "2026-09-19",
           "price": 9840.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 9840.0
         }
       ]
     },
@@ -908,6 +1152,10 @@
       "history": [
         {
           "date": "2026-09-19",
+          "price": 13999.0
+        },
+        {
+          "date": "2026-10-01",
           "price": 13999.0
         }
       ]
@@ -922,6 +1170,10 @@
         {
           "date": "2026-09-19",
           "price": 13999.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 13999.0
         }
       ]
     },
@@ -934,6 +1186,10 @@
       "history": [
         {
           "date": "2026-09-19",
+          "price": 12999.0
+        },
+        {
+          "date": "2026-10-01",
           "price": 12999.0
         }
       ]
@@ -948,6 +1204,10 @@
         {
           "date": "2026-09-19",
           "price": 10999.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 10999.0
         }
       ]
     },
@@ -960,6 +1220,10 @@
       "history": [
         {
           "date": "2026-09-19",
+          "price": 12220.0
+        },
+        {
+          "date": "2026-10-01",
           "price": 12220.0
         }
       ]
@@ -974,6 +1238,10 @@
         {
           "date": "2026-09-19",
           "price": 14999.0
+        },
+        {
+          "date": "2026-10-01",
+          "price": 14999.0
         }
       ]
     },
@@ -987,6 +1255,205 @@
         {
           "date": "2026-09-19",
           "price": 8549.1
+        },
+        {
+          "date": "2026-10-01",
+          "price": 8549.1
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "Samsung TV - Q6F 65\" 4K QLED Television Smart TV with Quantum HDR",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/samsung-tv-q6f-65-4k-qled-television-smart-tv-with-quantum-hdr/PLID102676744",
+      "history": [
+        {
+          "date": "2026-10-01",
+          "price": 10999.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "TCL 65\" T6C 4K QLED Google Smart TV with Dolby Vision & Atmos",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/tcl-65-t6c-4k-qled-google-smart-tv-with-dolby-vision-atmos/PLID99759916",
+      "history": [
+        {
+          "date": "2026-10-01",
+          "price": 7999.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "TCL 65\" C655 4K QLED Google Smart TV with ONKYO 2.1",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/tcl-65-c655-4k-qled-google-smart-tv-with-onkyo-2-1/PLID95886102",
+      "history": [
+        {
+          "date": "2026-10-01",
+          "price": 8999.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "Hisense Smart TV - 75\" QLED 4K Television Plasma TV 75Q6N Flat Screen",
+      "size": 75,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/hisense-smart-tv-75-qled-4k-television-plasma-tv-75q6n-flat-scre/PLID96016287",
+      "history": [
+        {
+          "date": "2026-10-01",
+          "price": 13546.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "Xiaomi 75\" S 4K QLED Mini LED Google Smart TV with Dolby Audio & Game Boost",
+      "size": 75,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/xiaomi-75-s-4k-qled-mini-led-google-smart-tv-with-dolby-audio-ga/PLID102573761",
+      "history": [
+        {
+          "date": "2026-10-01",
+          "price": 14999.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "Hisense Smart TV - 75\" Q6Q 4K Smart QLED TV with Quantum Dot & Dolby Vision",
+      "size": 75,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/hisense-smart-tv-75-q6q-4k-smart-qled-tv-with-quantum-dot-dolby-/PLID98366516",
+      "history": [
+        {
+          "date": "2026-10-01",
+          "price": 13089.0
+        }
+      ]
+    },
+    {
+      "store": "Takealot",
+      "title": "TCL 75\" C655 4K QLED Smart Google TV with ONKYO 2.1",
+      "size": 75,
+      "currency": "ZAR",
+      "url": "https://www.takealot.com/tcl-75-c655-4k-qled-smart-google-tv-with-onkyo-2-1/PLID95886311",
+      "history": [
+        {
+          "date": "2026-10-01",
+          "price": 11999.0
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "Samsung 65\" 4K Smart TV, Mini LED, 120Hz, AI, Motion Accelerator",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0H378Z575",
+      "history": [
+        {
+          "date": "2026-10-01",
+          "price": 9998.0
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "JVC 65-Inch 4K UHD Display Smart LED TV",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0CLHCKJ6K",
+      "history": [
+        {
+          "date": "2026-10-01",
+          "price": 10367.1
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "TCL 65C6KS 4K UHD QD-Mini LED Google 65-Inch Smart TV",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0HJWBQTZ5",
+      "history": [
+        {
+          "date": "2026-10-01",
+          "price": 9699.03
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "TCL 65 Inch 4K Smart TV, QD-LED, Google TV, Dolby Atmos",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0GYVBVFPW",
+      "history": [
+        {
+          "date": "2026-10-01",
+          "price": 12999.0
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "Toshiba 65\" Z570 4K UHD Smart TV with Quantum Dot, 120Hz, HDR10+, Dolby Vision, Dolby Atmos, HDMI 2.1, VRR, FreeSync Premium, AirPlay, HomeKit, HomeOS U9",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0HK4C7ZWQ",
+      "history": [
+        {
+          "date": "2026-10-01",
+          "price": 9699.1
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "Toshiba 65'' Z670SP 65-Inch 4K UHD Quantum Dot Smart TV with 144Hz, Dolby Vision, HDR10+, FreeSync Premium, VRR, ALLM, HDMI 2.1, HomeOS, AirPlay, Voice Control",
+      "size": 65,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0HJBWPZ2Z",
+      "history": [
+        {
+          "date": "2026-10-01",
+          "price": 11398.8
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "Samsung 75\" Mini LED DLG 120Hz AI Smart TV with 4K Upscaling and Motion Accelerator",
+      "size": 75,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0H374TQX2",
+      "history": [
+        {
+          "date": "2026-10-01",
+          "price": 13998.0
+        }
+      ]
+    },
+    {
+      "store": "Amazon",
+      "title": "TCL P635 Series 4K Ultra HD Google Television, 75-Inch Size",
+      "size": 75,
+      "currency": "ZAR",
+      "url": "https://www.amazon.co.za/dp/B0CNKNV7MF",
+      "history": [
+        {
+          "date": "2026-10-01",
+          "price": 10622.96
         }
       ]
     }
